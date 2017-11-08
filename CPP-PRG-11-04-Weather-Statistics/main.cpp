@@ -27,6 +27,8 @@
 #include <iostream>
 #include <iomanip>
 
+using namespace std;
+
 struct StructMonthWeather
 {
     double dblRainfallTotal;
@@ -45,8 +47,6 @@ struct StructWeatherResults
     int intMonthLow;
     double dblAverageMonthlyTemp;
 };
-
-using namespace std;
 
 StructMonthWeather *getMonthsData(int);
 StructWeatherResults *calculateResults(StructMonthWeather *, const int);
